@@ -4,16 +4,22 @@
 			"path": "."
 		},
 		{
-			"path": "../goit-markup-hw-03/css"
+			"path": "../goit-markup-hw-04/imagesforportf"
 		},
 		{
-			"path": "../goit-markup-hw-03/images"
+			"path": "../goit-markup-hw-04/imagesdecoration"
 		},
 		{
-			"path": "../goit-markup-hw-03/imagesforportf"
+			"path": "../goit-markup-hw-04/images"
+		},
+		{
+			"path": "../goit-markup-hw-04/css"
+		},
+		{
+			"path": "../goit-markup-hw-04/.vscode"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "goit-markup-hw-04"
+		"liveServer.settings.multiRootWorkspaceName": "goit-markup-hw-05"
 	}
 }
