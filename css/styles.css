@@ -58,6 +58,10 @@ div {
  
 .page-header {
   border-bottom: 1px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  /*width: 100%;*/
 }
 
 /*Main nav*/
@@ -951,14 +955,6 @@ ul {
   outline: 1px solid transparent;
 }
 
-.thumb-portfolio::before {
-display: inline-block;
-content: "";
-width: 50px;
-height: 50px;
-background-color: rgba(33, 150, 243, 0.9);
-}
-
 .item-element * {
   outline: 1px solid transparent;
 }
@@ -1019,3 +1015,73 @@ background-color: rgba(33, 150, 243, 0.9);
   font-size: 16px;
   line-height: 1.8;
 }
+
+/*.overlay {
+  /*visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+} 
+
+.overlay-text {
+  padding: 63px 24px;
+}
+
+.item-element {
+  position: relative;
+} 
+
+.item-element:hover .overlay, 
+.item-element:focus .overlay {
+  opacity: 1; 
+} */
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  outline: 3px solid green;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.card-portfolio :hover .overlay,
+.card-portfolio :focus .overlay{
+  opacity: 1;
+}
+
+.thumb-portfolio {
+  position: relative;
+}
+
+.overlay-text {
+  color: var(--primary-white-color);
+  font style: normal;
+  font weight: normal;
+  font size: 18px;
+  line height: 28px;
+  line-height: 133%;
+}
+
+.thumb-portfolio::before {
+display: inline-block;
+position: absolute;
+content: "";
+width: 100%;
+height: 100%;
+background-color: rgba(33, 150, 243, 0.9);
+opacity: 0;
+}
+
+.thumb-portfolio:hover::before,
+.thumb-portfolio:focus::before {
+  opacity: 1;
+}
+
+/*.item-element {
+  overflow: hidden;
+}*/
