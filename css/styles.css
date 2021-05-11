@@ -81,6 +81,21 @@ div {
   align-items: center;
 }
 
+.current {
+  position: relative;
+}
+
+.current::after {
+  content:"";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+}
+
 
 .site-nav {
   display: flex;
@@ -357,6 +372,30 @@ a {
 
   padding-top: 221px;
 }
+
+/*КНОПКА МОДАЛЬНОГО ВІКНА*/
+.icon-modal-svg {
+  width: 11px;
+  height: 11px;
+  fill: #000000;
+}
+
+.item-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+  
 
 /* section*/
 
