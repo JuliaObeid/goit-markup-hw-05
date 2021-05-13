@@ -1072,7 +1072,6 @@ ul {
   margin-bottom: 4px;
 }
 
-
 .item-element:nth-child(3n) {
   margin-right: 0;
 }
@@ -1176,6 +1175,8 @@ width: 100%;
 height: 100%;
 background-color: rgba(33, 150, 243, 0.9);
 opacity: 0;
+transform:translateY(100%);
+transition: transform 250ms linear;
 }
 
 .thumb-portfolio:hover::before,
@@ -1186,3 +1187,8 @@ opacity: 0;
 /*.item-element {
   overflow: hidden;
 }*/
+
+.item-element:hover .thumb-portfolio::before {
+  transform:translateY(0);
+}
+
