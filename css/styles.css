@@ -488,10 +488,10 @@ margin-right: 0;
   font-size: 14px;
   color: var(--primary-white-color);
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  content:"";
+ 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Features */
