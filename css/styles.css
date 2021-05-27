@@ -488,10 +488,9 @@ margin-right: 0;
   font-size: 14px;
   color: var(--primary-white-color);
   text-transform: uppercase;
- 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+
 }
 
 /* Features */
