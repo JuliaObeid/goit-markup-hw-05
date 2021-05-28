@@ -96,7 +96,6 @@ div {
   background-color: #2196F3;
 }
 
-
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -134,7 +133,7 @@ div {
   margin-left: 50px;
 }
 
-.link {
+.site-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -145,15 +144,11 @@ div {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  
-  transition-property: color;
-  transition-duration: 2000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /*transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);*/
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover,
-.link:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 
@@ -208,6 +203,8 @@ a {
   display: flex;
   align-items: center;
   /*margin-right: 50px;*/
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts .mail:hover,
@@ -225,6 +222,8 @@ a {
 
   display: flex;
   align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts .phone:hover,
 .contacts .phone:focus {
@@ -334,6 +333,7 @@ a {
   text-align: center;
   align-items: center;
   display: inline-block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
@@ -550,7 +550,6 @@ img {
 }
 
 
-
 /*.icon-attention::before {
   background-image: url("../imagesdecoration/Vector.svg");
 }
@@ -759,6 +758,7 @@ margin-left: 30px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--primary-white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-item:not(:last-child) {
@@ -829,6 +829,7 @@ margin-left: 30px;
   fill: currentColor;
   display: flex;
   text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icons-svg:hover,
@@ -977,6 +978,8 @@ margin-left: 30px;
   width: 20px;
   height: 20px;
   fill: var(--primary-white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-link-footer:hover,
